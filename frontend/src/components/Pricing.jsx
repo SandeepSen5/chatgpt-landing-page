@@ -32,18 +32,35 @@ export default function Pricing() {
                         <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
                         <p className="text-3xl font-bold mb-4">{plan.price}</p>
 
-                        <ul className="text-gray-400 mb-6 space-y-2">
+                        <ul className="text-gray-400 mb-6 space-y-2 text-left mx-auto w-fit">
                             {plan.features.map((f, i) => (
-                                <li key={i}>✔ {f}</li>
+                                <li key={i} className="flex items-center gap-3">
+                                    <span className="text-purple-500 w-4 flex justify-center">✔</span>
+                                    <span>{f}</span>
+                                </li>
                             ))}
                         </ul>
 
-                        <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-2 rounded-lg">
+                        <button className="
+  relative 
+  bg-gradient-to-r from-purple-500 to-blue-500 
+  px-6 py-2 
+  rounded-lg 
+  mt-4 
+  mx-auto 
+  transition-all 
+  duration-300 
+  ease-out
+  hover:scale-105 
+  hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]
+  active:scale-95
+  will-change-transform
+">
                             Choose Plan
                         </button>
                     </div>
                 ))}
             </div>
-        </section>
+        </section >
     );
 }

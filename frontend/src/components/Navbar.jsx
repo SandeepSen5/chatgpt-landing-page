@@ -9,11 +9,9 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:flex gap-6 text-gray-300">
-                <a href="#">Features</a>
-                <a href="#pricing" className="hover:text-white">
-                    Pricing
-                </a>
-                <a href="#">About</a>
+                <a href="#features" className="hover:text-white">Features</a>
+                <a href="#pricing" className="hover:text-white">Pricing</a>
+                <a href="#about" className="hover:text-white">About</a>
             </div>
 
             <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-2 rounded-lg">
