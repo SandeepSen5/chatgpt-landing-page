@@ -60,7 +60,7 @@ export default function Features({ expand }) {
                 {feature.desc}
               </p>
 
-              {/* Expand content */}
+             
               <div
                 className={`overflow-hidden transition-all duration-500 ${
                   expanded ? "max-h-40 mt-2" : "max-h-0"

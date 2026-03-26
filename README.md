@@ -7,7 +7,7 @@ Designed to showcase clean UI, smooth UX, and component-based architecture.
 
 ## 🌐 Live Demo
 
-👉 https://your-vercel-link.vercel.app
+👉 https://chatgpt-ai-landing.vercel.app/
 
 ---
 

@@ -65,7 +65,7 @@ export default function Pricing() {
               </p>
             </div>
 
-            {/* Features */}
+           
             <ul className="text-gray-400 mb-6 space-y-2 text-left mx-auto w-fit">
               {plan.features.map((f, i) => (
                 <li key={i} className="flex items-center gap-3">
@@ -77,7 +77,7 @@ export default function Pricing() {
               ))}
             </ul>
 
-            {/* Button */}
+           
             <button
               className="
                 bg-gradient-to-r from-purple-500 to-blue-500

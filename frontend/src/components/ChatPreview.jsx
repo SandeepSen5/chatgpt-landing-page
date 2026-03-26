@@ -2,18 +2,18 @@ export default function ChatPreview() {
     return (
         <section className="py-20 px-6 max-w-6xl mx-auto">
 
-            {/* Heading */}
+           
             <h2 className="text-3xl font-bold text-center mb-12">
                 Experience AI in Action
             </h2>
 
-            {/* Chat Container */}
+            
             <div className="bg-gray-900 rounded-2xl p-6 max-w-3xl mx-auto shadow-lg">
 
-                {/* Messages */}
+                
                 <div className="space-y-4">
 
-                    {/* User Message */}
+                   
                     <div className="flex justify-end items-start gap-2">
                         <div className="bg-purple-600 px-4 py-2 rounded-lg max-w-xs">
                             Write a React button component
@@ -24,7 +24,7 @@ export default function ChatPreview() {
                         </div>
                     </div>
 
-                    {/* AI Message */}
+                    
                     <div className="flex justify-start">
                         <div className="bg-gray-800 px-4 py-3 rounded-lg max-w-xs text-sm text-gray-300">
                             Here's a reusable React button component:
@@ -43,7 +43,7 @@ export default function ChatPreview() {
 
                 </div>
 
-                {/* Input box */}
+                
                 <div className="mt-6 flex items-center gap-2 border border-gray-700 rounded-lg px-3 py-2">
                     <input
                         type="text"
