@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -8,15 +10,30 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
 function App() {
+  const [expandFeatures, setExpandFeatures] = useState(false);
+
+  const handleLearnMore = () => {
+    setExpandFeatures(true);
+    document
+      .getElementById("features")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handlePricingScroll = () => {
+    document
+      .getElementById("pricing")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="bg-black text-white min-h-screen">
-      <Navbar />
-      <Hero />
-      <Features />
+      <Navbar onTryNow={handlePricingScroll} />
+      <Hero onGetStarted={handlePricingScroll} onLearnMore={handleLearnMore} />
+      <Features expand={expandFeatures} />
       <Pricing />
       <ChatPreview />
       <About />
-      <CTA />
+      <CTA onGetStarted={handlePricingScroll} />
       <Footer />
     </div>
   );

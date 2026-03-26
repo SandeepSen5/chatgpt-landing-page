@@ -1,6 +1,6 @@
 import { Sparkles } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({ onTryNow }) {
     return (
         <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
             <div className="flex items-center gap-2 text-xl font-bold">
@@ -14,7 +14,7 @@ export default function Navbar() {
                 <a href="#about" className="hover:text-white">About</a>
             </div>
 
-            <button className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-2 rounded-lg">
+            <button onClick={onTryNow} className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-2 rounded-lg">
                 Try Now
             </button>
         </nav>
